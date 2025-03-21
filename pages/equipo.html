@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>refugio</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="../fotos/logo-huellita.png" alt="Logo huellita">HUELLITAS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/adopciones.html">Adopciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/donaciones.html">Donaciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active " href="../pages/equipo.html">Equipo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/perdidos.html">Perdidos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div>
+            <h1>EQUIPO</h1>
+        </div>
+    </header>
+    <main class="container equipo">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-lg-6">
+                <img src="../fotos/voluntarioa.png" alt="Foto de los voluntarios">
+            </div>
+            <div class="col-lg-6">
+                <p>¡Hola! Somos un grupo de voluntarios del refugio Huellita, un lugar dedicado a rescatar y cuidar a
+                    los
+                    animales
+                    que más lo necesitan. Nuestro trabajo es ofrecerles un hogar temporal lleno de amor y atención hasta
+                    que
+                    encuentren una familiadedicamos a alimentar, limpiar, cuidar y proporcionar atención médica a
+                    nuestros
+                    amigos
+                    peludos, pero tam que los adopte. Cada día nos bién necesitamos tu ayuda para seguir adelante.
+                </p>
+            </div>
+        </div>
+        <div class="invitacion-equipo">
+            <p>Si amas a los animales y deseas contribuir a su bienestar, te invitamos a unirte a nuestro equipo. Como
+                voluntario, podrás participar en diversas actividades, como pasear a los perros, ayudar en la limpieza
+                de
+                las
+                instalaciones, ofrecer compañía a los animales y, por supuesto, difundir el mensaje de la importancia de
+                la
+                adopción responsable.
+            </p>
+            <p>Tu tiempo, tu energía y tu cariño pueden hacer una gran diferencia en la vida de un animal. Juntos,
+                podemos
+                mejorar la vida de muchos más y brindarles la oportunidad de un futuro mejor. ¡Te esperamos con los
+                brazos
+                abiertos para que formes parte de nuestra familia de voluntarios!
+            </p>
+            <div class="row">
+                <div class="col-lg-6">
+                    <p> Si estás interesado, no dudes en contactarnos, <strong>llena nuestro formulario</strong> y ser
+                        parte de esta
+                        maravillosa causa. ¡Los animales te necesitan!
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <form action="/submit" method="post" class="formulario-equipo">
+                        <!--etiqueta contenedora, no tengo la url, por eso puse /submit-->
+                        <span>
+                            <label class="item-formulario" for="nombre">Nombre</label>
+                            <input type="text" name="nombre" id="nombre">
+                        </span>
+                        <span>
+                            <label class="item-formulario" for="edad">Edad</label>
+                            <input type="text" name="edad" id="edad">
+                        </span>
+                        <span>
+                            <label class="item-formulario" for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                        </span>
+                        <span>
+                            <label class="item-formulario">Género</label>
+                            <input type="radio" name="genero" id="hombre" value="Hombre">
+                            <label for="hombre">Hombre</label>
+
+                            <input type="radio" name="genero" id="mujer" value="Mujer">
+                            <label for="mujer">Mujer</label>
+
+                            <input type="radio" name="genero" id="otro" value="Prefiero no decirlo">
+                            <label for="otro">Prefiero no decirlo</label>
+                        </span>
+                        <span>
+                            <input type="submit" value="Enviar">
+                        </span>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!--formulario -->
+
+    <footer><!--Serian los pie de página con la información de contacto-->
+        <div>
+
+            <a href="https://instagram.com">Encontranos en nuestro Instagram</a>
+            <a href="https://facebook.com">Encontranos en Facebook</a>
+            <a href="https://twitter.com">Encontranos en Twitter</a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
