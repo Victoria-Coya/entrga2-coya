@@ -1,4 +1,29 @@
 @charset "UTF-8";
+.formulario-equipo button, .tarjeta button, .boton-inicio,
+.boton-donaciones {
+  border-radius: 5px !important;
+  padding: 10px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+.formulario-equipo button:hover, .tarjeta button:hover, .boton-inicio:hover,
+.boton-donaciones:hover {
+  opacity: 0.8;
+}
+
+@keyframes escala-boton {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 main {
   display: flex;
   flex-direction: column;
@@ -104,17 +129,13 @@ h1 {
 .boton-donaciones {
   width: fit-content;
   align-self: center;
-  border-radius: 5px !important;
-  padding: 10px;
-  font-weight: 600;
-  border: none;
   background-color: #FFDDAE;
   color: black;
-  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 .boton-inicio:hover,
 .boton-donaciones:hover {
-  opacity: 0.8;
+  animation: escala-boton 0.5s ease-in-out;
 }
 .boton-inicio a,
 .boton-donaciones a {
@@ -161,16 +182,12 @@ h1 {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  border-radius: 5px !important;
-  padding: 10px;
-  font-weight: 600;
-  border: none;
   background-color: #0e97bd;
   color: #ffffff;
-  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 .tarjeta button:hover {
-  opacity: 0.8;
+  animation: escala-boton 0.5s ease-in-out;
 }
 .tarjeta button img {
   height: 80%;
@@ -206,16 +223,12 @@ h1 {
 }
 .formulario-equipo button {
   width: 50%;
-  border-radius: 5px !important;
-  padding: 10px;
-  font-weight: 600;
-  border: none;
   background-color: #da993e;
   color: #ffffff;
-  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 .formulario-equipo button:hover {
-  opacity: 0.8;
+  animation: escala-boton 0.5s ease-in-out;
 }
 
 .item-formulario {
